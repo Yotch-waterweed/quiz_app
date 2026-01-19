@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0;
 
     // クイズデータを読み込み、初期化する
-    fetch('quiz.json')
+    fetch('../data/quiz.json')
         .then(response => response.json())
         .then(data => {
             quizzes = data.questions;
